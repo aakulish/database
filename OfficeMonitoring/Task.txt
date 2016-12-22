@@ -1,0 +1,32 @@
+﻿Vasya's old friend Peter is now a boss of a small IT company. He recently discovered that
+his employees (especially programmers) were not taking things seriously and often left the
+office much earlier than they were supposed to. He decided to install a special monitoring
+system that records the exact time when employees enter and leave the office room.
+The system had been working for about a month, just the right time to collect some statistics
+when suddenly the hard drive on the local server failed and all the data was lost 
+(Rumours say that it was done on purpose by the system administrator who was not very 
+happy with his salary).
+
+So Peter asked his friend to suggest a better solution that will use a remote database
+to store all the data from the monitoring system. The internals of the monitoring system
+are unknown, however it logs all the data to a text file, which can be used.
+Vasya's knowledge of programming is not strong enough to solve such a complicated
+task, so he asks you to help him.
+
+You are provided with an output file from the monitoring system. It records the employee's name,
+the date and times of arrival and departure (it is guaranteed that people arrive and leave within
+the same day). You can also use the given methods to read data from the text file (Repository class)
+
+1. Design a data schema of the subject area, work out proper restrictions on data
+2. Create a database and save all the data from the text file to it
+3. Write a request to the database that will calculate the average number of minutes that each
+employee stays at the office.
+
+
+Hint:
+To calculate the difference between two dates in seconds or any other units, subtract
+one from another and apply one of the Total... methods, e.g
+
+DateTime dt2, dt1;
+...
+(dt2-dt1).TotalSeconds
